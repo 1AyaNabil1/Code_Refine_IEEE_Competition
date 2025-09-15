@@ -1,9 +1,9 @@
-## Data Model
+# Data Model
 
-# Users Table
+## Users Table
 Stores the basic information about each user.
 
-# Attributes:
+### Attributes:
 - id (Primary Key) – Unique identifier for each user  
 - first_name – User’s first name  
 - last_name – User’s last name  
