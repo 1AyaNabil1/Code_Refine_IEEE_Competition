@@ -1,5 +1,7 @@
-## Functional Requirements
-- Administrators can add, update, and remove movies and metadata via an admin interface
+# Functional & Non-Functional Requirements
+
+## 1. Functional Requirements
+
 - Users can register, log in, and manage a personal profile with watch history and preferences
 - The system stores and retrieves information about millions of movies (title, description, cast, trailers)
 - Users can search and filter movies by title, cast, genre, and other attributes
@@ -8,7 +10,8 @@
 - The recommendation engine provides personalized suggestions based on watch history and lists
 - The system sends notifications when new movies matching user interests are available
 
-## Non-Functional Requirements
+## 2. Non-Functional Requirements
+
 - **Scalability**: Support millions of users and movie records with efficient data storage and retrieval
 - **Performance**: Ensure low-latency search and page loads (<200ms) under high load
 - **Availability**: Maintain 99.9% uptime with redundancy and failover strategies
