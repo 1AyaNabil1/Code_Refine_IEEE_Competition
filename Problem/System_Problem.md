@@ -1,3 +1,5 @@
+# IEEEMBD System design
+
 You're a lead developer creating a new online platform called **IEEEMDB**. Your mission is to build a smart system that helps people discover movies, track what they've watched, and share their thoughts with friends. Think of it as a personal movie diary and social network all in one.
 
 This contest is about two main things:
@@ -7,7 +9,7 @@ This contest is about two main things:
 
 Your goal is to design a powerful, scalable system and implement a small demo to prove your design works.
 
-### **The Challenge: IEEEMDB**
+## **The Challenge: IEEEMDB**
 
 Your system needs to handle the entire user experience of a movie lover, from finding a new movie to sharing their review. This includes:
 
@@ -34,6 +36,4 @@ Your final work will be judged on these key parts:
 - **Implementation (20%)**: The quality of your code. We will check that it's clean, easy to manage, and follows good coding practices. Note that you are not expected to implement the whole system, just implement its core features and other features of your choice. Feel free to use whatever framework/technology, or just implement it as a simple console application, it’s up to you and what you are most comfortable with.
 - **Back-Of-The-Envelope-Estimation (Bonus)**: Your estimation of the system capacity or performance requirements. For example, how many daily active users (DAU) your system is expecting, or how many queries per second (QPS) your system supports, and so on.
 
-Your final submission must be a **GitHub repository** that includes your code and a detailed README file. The README should clearly document your system. For the functional & non-functional requirements, the data model, the API design, and the high-level architecture, you are required to use **Excalidraw** and include the exported file in your repository. For the deep dives, you are required to state them in a `txt` or an `md` file and mention it in your README documentation. If you decided to do the back-of-the-envelope-estimation, feel free to add them in **Excalidraw** or a separated file, but also mention this in the [README](http://README.md) documentation.
-
-Good luck. We look forward to seeing your ideas.
+Your final submission must be a **GitHub repository** that includes your code and a detailed README file. The README should clearly document your system. For the functional & non-functional requirements, the data model, the API design, and the high-level architecture, you are required to use **Excalidraw** and include the exported file in your repository. For the deep dives, you are required to state them in a `txt` or an `md` file and mention it in your README documentation. If you decided to do the back-of-the-envelope-estimation, feel free to add them in **Excalidraw** or a separated file.
