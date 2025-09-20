@@ -1,0 +1,109 @@
+{
+    "Authentication": {
+      "POST /auth/register": {
+        "body": {
+          "first_name": "string",
+          "last_name": "string",
+          "email": "string",
+          "password": "string"
+        }
+      },
+      
+      "POST /auth/login": {
+        "body": {
+          "email": "string",
+          "password": "string"
+        }},
+
+    "Movies": {
+      "GET /movies": {
+        "response": "Movie[]"
+      },
+
+      "POST /movies": {
+        "body": {
+          "title": "string",
+          "description": "string",
+          "genre_ids": "number[]",
+          "cast_members": "object[]"
+        }
+    },
+
+    "User_Interactions": {
+      "POST /movies/{id}/rate": {
+        "body": {
+          "rating": "number"
+        },
+        "response": "UserMovieInteraction"
+      },
+      
+      "POST /movies/{id}/favorite": {
+        "response": "UserMovieInteraction"
+      },
+      
+      "POST /movies/{id}/view": {
+        "response": "UserMovieInteraction"
+      }
+    },
+
+    "Reviews": {
+      "POST /movies/{id}/reviews": {
+        "body": {
+          "title": "string",
+          "content": "string",
+          "rating": "number"
+        },
+        "response": "Review"
+      },
+      
+      "GET /movies/{id}/reviews": {
+        "response": "Review[]"
+      }
+    },
+
+    "Movie_Lists": {
+      "POST /lists": {
+        "body": {
+          "title": "string",
+          "description": "string",
+          "is_public": "boolean"
+        },
+        "response": "MovieList"
+      },
+      
+      "POST /lists/{id}/movies": {
+        "body": {
+          "movie_id": "number",
+          "notes": "string"
+        },
+        "response": "MovieListItem"
+      },
+      
+      "GET /users/{id}/lists": {
+        "response": "MovieList[]"
+      }
+    },
+
+    "Recommendations": {
+      "GET /users/{id}/recommendations": {
+        "response": "UserRecommendation[]"
+      },
+      
+      "POST /recommendations/generate": {
+        "body": {
+          "user_id": "number"
+        },
+        "response": "UserRecommendation[]"
+      }
+    },
+
+    "Notifications": {
+      "GET /notifications": {
+        "response": "Notification[]"
+      },
+      
+      "POST /notifications/{id}/read": {
+        "response": "Notification"
+      }
+    }
+    }
