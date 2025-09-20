@@ -11,33 +11,18 @@ erDiagram
         string email UK
         string password
         string role
-        string profile_picture_url
-        text bio
-        datetime created_at
-        datetime updated_at
     }
     
     MOVIES {
         int id PK
         string title
         text description
-        text plot
-        string movie_url
-        string poster_url
-        string trailer_url
         date release_date
         int duration
         string language
-        string country
-        decimal budget
-        decimal box_office
         float imdb_rating
         float avg_user_rating
-        int num_ratings
-        int num_favorites
         int num_views
-        datetime created_at
-        datetime updated_at
     }
     
     GENRES {
@@ -52,7 +37,6 @@ erDiagram
         date birth_date
         string nationality
         text biography
-        string profile_picture_url
     }
     
     REVIEWS {
@@ -62,9 +46,6 @@ erDiagram
         string title
         text content
         int rating
-        int likes_count
-        datetime created_at
-        datetime updated_at
     }
     
     MOVIE_LISTS {
@@ -73,20 +54,8 @@ erDiagram
         string title
         text description
         boolean is_public
-        datetime created_at
-        datetime updated_at
     }
-    
-    USER_RECOMMENDATIONS {
-        int id PK
-        int user_id FK
-        int movie_id FK
-        float recommendation_score
-        text reason
-        boolean is_seen
-        datetime created_at
-    }
-    
+
     NOTIFICATIONS {
         int id PK
         int user_id FK
@@ -118,7 +87,6 @@ erDiagram
         int movie_id FK
         string interaction_type
         int rating
-        datetime created_at
     }
     
     MOVIE_LIST_ITEMS {
@@ -127,12 +95,6 @@ erDiagram
         int movie_id FK
         int position
         text notes
-    }
-    
-    USER_FOLLOWS {
-        int follower_id PK,FK
-        int following_id PK,FK
-        datetime created_at
     }
 
     %% Relationships
@@ -152,13 +114,7 @@ erDiagram
     MOVIE_LISTS ||--o{ MOVIE_LIST_ITEMS : contains
     MOVIES ||--o{ MOVIE_LIST_ITEMS : listed_in
     
-    USERS ||--o{ USER_RECOMMENDATIONS : receives
-    MOVIES ||--o{ USER_RECOMMENDATIONS : recommended
-    
     USERS ||--o{ NOTIFICATIONS : receives
-    
-    USERS ||--o{ USER_FOLLOWS : follows
-    USERS ||--o{ USER_FOLLOWS : followed_by
 ```
 
 ## Entity Descriptions
